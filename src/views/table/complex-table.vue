@@ -240,6 +240,8 @@ export default {
         setTimeout(() => {
           this.listLoading = false
         }, 1.5 * 1000)
+      }, response => {
+        console.log(response)
       })
     },
     handleFilter() {

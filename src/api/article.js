@@ -2,7 +2,8 @@ import request from '@/utils/request'
 
 export function fetchList(query) {
   return request({
-    url: '/article/list',
+    url: 'http://medicine.local.com/index/article/index',
+    // url: '/article/list',
     method: 'get',
     params: query
   })
