@@ -2,8 +2,8 @@ import request from '@/utils/request'
 
 export function fetchList(query) {
   return request({
-    url: 'http://medicine.local.com/index/article/index',
-    // url: '/article/list',
+    // url: 'http://medicine.local.com/index/article/index',
+    url: '/article/list',
     method: 'get',
     params: query
   })
@@ -35,7 +35,8 @@ export function createArticle(data) {
 
 export function updateArticle(data) {
   return request({
-    url: '/article/update',
+    // url: '/article/update',
+    url: 'http://medicine.local.com/index/article/update',
     method: 'post',
     data
   })

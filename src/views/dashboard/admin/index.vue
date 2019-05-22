@@ -7,6 +7,9 @@
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <line-chart :chart-data="lineChartData" />
     </el-row>
+    <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
+      <line-chart1 :chart-data="lineChartData" />
+    </el-row>
 
     <el-row :gutter="32">
       <el-col :xs="24" :sm="24" :lg="8">
@@ -44,6 +47,7 @@
 import GithubCorner from '@/components/GithubCorner'
 import PanelGroup from './components/PanelGroup'
 import LineChart from './components/LineChart'
+import LineChart1 from './components/LineChart.1'
 import RaddarChart from './components/RaddarChart'
 import PieChart from './components/PieChart'
 import BarChart from './components/BarChart'
@@ -76,6 +80,7 @@ export default {
     GithubCorner,
     PanelGroup,
     LineChart,
+    LineChart1,
     RaddarChart,
     PieChart,
     BarChart,
